@@ -1,0 +1,8 @@
+name: CreditVoidKill
+version: ${project.version}
+main: me.prostedeni.goodcraft.creditvoidkill.CreditVoidKill
+api-version: 1.13
+description: plugin that allows you to credit void kill
+commands:
+  creditvoidkill:
+    description: allows you to reload config
