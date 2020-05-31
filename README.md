@@ -27,6 +27,6 @@ will authorise player to reload the config
 
 amount of seconds from last punch to player to his death in the void, 8 works perfectly fine, but make sure to set it higher if player falls from higher position
 
-* KillMessage: '&4%player1% &3has been knocked into void by &6<player2>'
+* KillMessage: '&4%player1% &3has been knocked into void by &6%player2%'
   
 message that gets displayed when player gets killed by getting kicked into void. Does support color codes. **%player1%** will be replaced with name of killed player while **%player2%** will get replaced with his killer
