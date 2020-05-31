@@ -6,6 +6,8 @@ Allows you to credit killer of player knocked into void
 ## How does it work?
 
 * When player gets kicked into the void, his death will be announced, and killer, the last person who punched him, will get his credit.
+* It does have tab autocomplete, although this feature won't be very useful as there's only one command and one argument. Oh well, at least my inner aesthet is satisfied
+* If scoreboard objective **playerKills** exists, it adds 1 for the killer
 
 ## Commands
 
