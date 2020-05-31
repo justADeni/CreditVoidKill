@@ -25,4 +25,4 @@ amount of seconds from last punch to player to his death in the void, 8 works pe
 
 * KillMessage: '&4%player1% &3has been knocked into void by &6<player2>'
   
-message that gets displayed when player gets killed by getting kicked into void. Does support color codes. %player1% will be replaced with killed player while %player2% will get replaced with his killer
+message that gets displayed when player gets killed by getting kicked into void. Does support color codes. **%player1%** will be replaced with killed player while **%player2%** will get replaced with his killer
