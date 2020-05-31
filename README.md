@@ -1,6 +1,8 @@
 # CreditVoidKill
 Allows you to credit killer of player knocked into void
 
+*To download, go to https://github.com/prosteDeniGC/CreditVoidKill/releases*
+
 ## How does it work?
 
 * When player gets kicked into the void, his death will be announced, and killer, the last person who punched him, will get his credit.
