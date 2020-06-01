@@ -38,3 +38,7 @@ if set to true, will run following command when player gets killed
 * RunCommand: 'scoreboard players add %player2% playerKills 1'
 
 an example of command, you can add any command you want, **%player2%** will get replaced with killer
+
+### Final note
+
+If you ever encounter this plugin and it's not up-to-date with newest versions of minecraft, you can most probably make it work by replacing "scheduleAsyncDelayedTask" with "scheduleSyncDelayedTask"
