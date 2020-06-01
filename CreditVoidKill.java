@@ -119,12 +119,12 @@ public final class CreditVoidKill extends JavaPlugin implements Listener {
         if (map.containsKey(e.getEntity().getName())) {
             if (e.getEntity().getLocation().getBlockY() < 0) {
 
-                String replace1 = getConfig().getString("KillMessage").replaceFirst("<player1>", e.getEntity().getName());
-                String replace2 = replace1.replaceFirst("<player2>", map.get(e.getEntity().getName()));
+                String replace1 = getConfig().getString("KillMessage").replaceFirst("%player1%", e.getEntity().getName());
+                String replace2 = replace1.replaceFirst("%player2%", map.get(e.getEntity().getName()));
                 e.setDeathMessage(ChatColor.translateAlternateColorCodes('&', replace2));
 
-                if (e.getEntity().getPlayer().getScoreboard().getObjective("playerKills") != null){
-                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "scoreboard players add " + map.get(e.getEntity().getName()) + " playerKills 1");
+                if (getConfig().getBoolean("Command")){
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), getConfig().getString("RunCommand").replaceFirst("%player2%", map.get(e.getEntity().getName())));
                 }
 
                 if (map.get(e.getEntity().getName()) != null) {
@@ -154,6 +154,7 @@ public final class CreditVoidKill extends JavaPlugin implements Listener {
                             reloadConfig();
                             getConfig();
                             saveConfig();
+                            saveDefaultConfig();
                             sender.sendMessage(ChatColor.DARK_GREEN + "Config reloaded");
                             System.out.println(ChatColor.DARK_GREEN + "Config reloaded");
                         } else if (!(args[0].equalsIgnoreCase("reload"))){
@@ -173,6 +174,7 @@ public final class CreditVoidKill extends JavaPlugin implements Listener {
                         reloadConfig();
                         getConfig();
                         saveConfig();
+                        saveDefaultConfig();
                         sender.sendMessage(ChatColor.DARK_GREEN + "Config reloaded");
                     } else if (!(args[0].equalsIgnoreCase("reload"))){
                         sender.sendMessage(ChatColor.DARK_RED + "Invalid arguments");
