@@ -15,14 +15,14 @@ creditvoidkill.admin
 will authorise player to reload the config
 
 ## Config
-Timer: 8
+`Timer: 8`
 amount of seconds from last punch to player to his death in the void, 8 works perfectly fine, but make sure to set it higher if player falls from higher position
 
-KillMessage: '&4%player1% &3has been knocked into void by &6%player2%'
+`KillMessage: '&4%player1% &3has been knocked into void by &6%player2%'`
 message that gets displayed when player gets killed by getting kicked into void. Does support color codes. %player1% will be replaced with name of killed player while %player2% will get replaced with his killer
 
-Command: false
+`Command: false`
 if set to true, will run following command when player gets killed
 
-RunCommand: 'scoreboard players add %player2% playerKills 1'
+`RunCommand: 'scoreboard players add %player2% playerKills 1'`
 an example of command, you can add any command you want, %player2% will get replaced with killer
