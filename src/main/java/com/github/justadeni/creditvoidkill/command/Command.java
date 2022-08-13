@@ -20,17 +20,17 @@ public class Command implements CommandExecutor {
                 return true;
 
         if (args.length == 0){
-            sender.sendMessage(hex.color("#BA2511Invalid argumentsFF0000"));
+            sender.sendMessage(hex.color("#BA2511Invalid arguments#FF0000"));
         } else if (args.length == 1){
             if (args[0].equalsIgnoreCase("reload")) {
                 CreditVoidKill.plugin.reloadConfig();
                 CreditVoidKill.plugin.saveConfig();
                 sender.sendMessage(hex.color("#196C0FConfig Reloaded#00FF55"));
             } else {
-                sender.sendMessage(hex.color("#BA2511Invalid argumentsFF0000"));
+                sender.sendMessage(hex.color("#BA2511Invalid arguments#FF0000"));
             }
         } else {
-            sender.sendMessage(hex.color("#BA2511Invalid argumentsFF0000"));
+            sender.sendMessage(hex.color("#BA2511Invalid arguments#FF0000"));
         }
         return true;
     }
