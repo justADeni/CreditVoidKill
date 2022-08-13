@@ -1,0 +1,11 @@
+name: CreditVoidKill
+version: '${project.version}'
+main: com.github.justadeni.creditvoidkill.CreditVoidKill
+api-version: 1.18
+load: STARTUP
+author: justADeni
+description: Allows you to credit killer of player knocked into void
+website: https://github.com/justADeni/CreditVoidKill
+commands:
+  creditvoidkill:
+    description: allows you to reload config
