@@ -2,7 +2,6 @@ package com.github.justadeni.creditvoidkill.command;
 
 import com.github.justadeni.HexColorLib;
 import com.github.justadeni.creditvoidkill.CreditVoidKill;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
